@@ -36,6 +36,7 @@ function IngredientSearch({ handleClick, setValue }) {
         break;
       case 'snack':
         handleClick(3);
+        break;
       default:
         handleClick(0);
     }
