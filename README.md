@@ -1,27 +1,70 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=6701995&assignment_repo_type=AssignmentRepo)
-# React-athon
+# Getting Started with Create React App
 
-For today's hackathon, we will be creating a web experience using data from an api.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Task 1 - API Research (20 - 30 mins)
+## Available Scripts
 
-Choose an API(s) for a full stack React app, this [list](https://apilist.fun) may help however feel free to pick any API you like. You can always fall back on pokemon/Star Wars if needs be.
+In the project directory, you can run:
 
-## Task 2 - Ideate and Plan (30 - 60 mins)
+### `npm start`
 
-Use Disney ideation to come up with an idea of what you want to build. Then decide what your MVP is, and make it so that you can achieve your MVP before lunch. Break down your idea into its component parts, and prioritise your tasks.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Task 3 - Build your MVP (60 - 180 mins)
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Have the most simple version of your app (just enough features to be useable) working before lunch. Make regular commits as you build each component. Consider using React Router, useReducer, useEffect, etc.. if appropriate.
+### `npm test`
 
-## Task 4 - Deployment
-Deploy your MVP on Netlify as soon as possible. Each time you push a new version of your app to Github, Netlify should automatically rebuild and deploy it. If your app uses environment variables, be sure to configure these on Netlify.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Task 5 - Stretch Goals
+### `npm run build`
 
-Focus on what features you are going to build next. Break it down into tasks/tickets that you can work on. Make use of feature branching and atomic commits.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Show & Tell @ 16:00
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-You'll be presenting your apps to each other, and each team member should be prepared to present about their app so an end of day wrap-up is a good idea.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
