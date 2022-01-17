@@ -1,6 +1,10 @@
 function Input({ handleChange }) {
   return (
-    <input onChange={handleChange} placeholder="Enter calories manually" />
+    <input
+      type="number"
+      onChange={handleChange}
+      placeholder="Enter calories manually"
+    />
   );
 }
 

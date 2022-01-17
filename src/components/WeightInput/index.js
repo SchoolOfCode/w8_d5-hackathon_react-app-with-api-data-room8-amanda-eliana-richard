@@ -1,7 +1,7 @@
 function WeightInput({ handleChange }) {
   return (
     <input
-      type="text"
+      type="number"
       onChange={handleChange}
       placeholder="Enter the weight /g"
     />

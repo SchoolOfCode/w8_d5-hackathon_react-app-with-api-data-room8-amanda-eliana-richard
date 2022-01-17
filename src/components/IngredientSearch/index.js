@@ -60,7 +60,6 @@ function IngredientSearch({ handleClick, setValue }) {
 
   return (
     <div>
-      <p>Search a food!</p>
       <IngredientInput handleChange={ingredientHandleChange} />
       <p>{calorie} calories / 100g</p>
       <WeightInput handleChange={weightHandleChange} />
