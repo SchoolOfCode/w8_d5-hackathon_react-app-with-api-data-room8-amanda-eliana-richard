@@ -29,7 +29,6 @@ function App() {
   const [value, setValue] = useState(0);
 
   function handleClick(index) {
-    console.log(index, value);
     const updatedItems = [
       ...items.slice(0, index),
       { ...items[index], itemTotal: items[index].itemTotal + value },

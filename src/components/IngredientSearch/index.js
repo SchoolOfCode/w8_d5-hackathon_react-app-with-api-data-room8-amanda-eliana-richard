@@ -8,7 +8,22 @@ function IngredientSearch({ handleClick, setValue }) {
   const [ingredient, setIngredient] = useState('');
   const [calorie, setCalorie] = useState(0);
   const [weight, setWeight] = useState(0);
-  const [meal, setMeal] = useState();
+  const [meal, setMeal] = useState('default');
+
+  useEffect(() => {
+    const loadData = async () => {
+      const response = await fetch(
+        `https://api.edamam.com/api/food-database/v2/parser?app_id=79461896&app_key=%209869e5f420b57b8f9d793d8ddd042a32%09&ingr=${ingredient}&nutrition-type=logging`
+      );
+      const data = await response.json();
+      setCalorie(data.parsed[0].food.nutrients.ENERC_KCAL);
+    };
+    loadData();
+  }, [ingredient]);
+
+  useEffect(() => {
+    setValue(Number((calorie / 100) * weight));
+  }, [ingredient, weight, meal]);
 
   function ingredientHandleChange(e) {
     setIngredient(e.target.value);
@@ -23,8 +38,9 @@ function IngredientSearch({ handleClick, setValue }) {
   }
 
   function addToMeal() {
-    setValue(Number((calorie / 100) * weight));
     switch (meal) {
+      case 'default':
+        break;
       case 'breakfast':
         handleClick(0);
         break;
@@ -34,25 +50,13 @@ function IngredientSearch({ handleClick, setValue }) {
       case 'dinner':
         handleClick(2);
         break;
-      case 'snack':
+      case 'snacks':
         handleClick(3);
         break;
       default:
         handleClick(0);
     }
   }
-
-  useEffect(() => {
-    const loadData = async () => {
-      const response = await fetch(
-        `https://api.edamam.com/api/food-database/v2/parser?app_id=79461896&app_key=%209869e5f420b57b8f9d793d8ddd042a32%09&ingr=${ingredient}&nutrition-type=logging`
-      );
-      const data = await response.json();
-      setCalorie(data.parsed[0].food.nutrients.ENERC_KCAL);
-      // console.log(data);
-    };
-    loadData();
-  }, [ingredient]);
 
   return (
     <div>
