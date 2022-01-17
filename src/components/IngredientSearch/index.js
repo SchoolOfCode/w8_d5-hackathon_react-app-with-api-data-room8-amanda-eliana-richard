@@ -23,7 +23,7 @@ function IngredientSearch({ handleClick, setValue }) {
 
   useEffect(() => {
     setValue(Number((calorie / 100) * weight));
-  }, [ingredient, weight, meal]);
+  }, [ingredient, weight, meal, calorie, setValue]);
 
   function ingredientHandleChange(e) {
     setIngredient(e.target.value);
